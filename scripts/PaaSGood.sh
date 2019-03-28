@@ -12,23 +12,25 @@ curl -X POST http://$JENKINS_URL:24711/job/sockshop/job/carts/job/master/build -
 echo "--------------------------"
 echo "Carts build started"
 echo "--------------------------"
-echo .
+echo
 sleep 15
 declare cartsBuilding=$(curl -s http://$JENKINS_URL:24711/job/sockshop/job/carts/job/master/lastBuild/api/json\?pretty | jq -r '.building')
 sleep 180
-while [ "$cartsBuilding" = "true" ]:
+while [ "$cartsBuilding" = "true" ]
 	do
 		cartsBuilding=$(curl -s http://$JENKINS_URL:24711/job/sockshop/job/carts/job/master/lastBuild/api/json\?pretty | jq -r '.building')
 		sleep 10
 done
+sleep 10
 declare cartsStatus=$(curl -s http://$JENKINS_URL:24711/job/sockshop/job/carts/job/master/lastBuild/api/json\?pretty | jq -r '.result')
 echo "--------------------------"
 echo "Carts build finished"
 echo "The build was marked as " $cartsStatus
 echo "--------------------------"
-echo .
+echo
 
 if [ "$cartsStatus" != "SUCCESS" ]
+then
 	exit
 fi
 echo "Do you wish to trigger carts.performance?"
@@ -42,11 +44,11 @@ done
 echo "--------------------------"
 echo "Carts performance started"
 echo "--------------------------"
-echo .
+echo
 sleep 15
 declare cartsPerfBuilding=$(curl -s http://$JENKINS_URL:24711/job/sockshop/job/carts.performance/job/master/lastBuild/api/json\?pretty | jq -r '.building')
 sleep 60
-while [ "$cartsPerfBuilding" = "true" ]:
+while [ "$cartsPerfBuilding" = "true" ]
 	do
 		cartsPerfBuilding=$(curl -s http://$JENKINS_URL:24711/job/sockshop/job/carts.performance/job/master/lastBuild/api/json\?pretty | jq -r '.building')
 		sleep 10
@@ -56,4 +58,4 @@ echo "--------------------------"
 echo "Carts performance finished"
 echo "The performance of carts was marked as " $cartsPerfStatus
 echo "--------------------------"
-echo .
+echo
