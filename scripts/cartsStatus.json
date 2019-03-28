@@ -23,7 +23,7 @@
       "buildsByBranchName" : {
         "master" : {
           "_class" : "hudson.plugins.git.util.Build",
-          "buildNumber" : 10,
+          "buildNumber" : 11,
           "buildResult" : null,
           "marked" : {
             "SHA1" : "3f494cf9bed212b7cb58172ca14812820e091e5d",
@@ -73,7 +73,7 @@
       "buildsByBranchName" : {
         "master" : {
           "_class" : "hudson.plugins.git.util.Build",
-          "buildNumber" : 10,
+          "buildNumber" : 11,
           "buildResult" : null,
           "marked" : {
             "SHA1" : "ecfefcfce25d58ce914c622521888e330ef0b7e2",
@@ -1467,104 +1467,27 @@
   ],
   "building" : false,
   "description" : null,
-  "displayName" : "#10",
-  "duration" : 315464,
-  "estimatedDuration" : 306771,
+  "displayName" : "#11",
+  "duration" : 310434,
+  "estimatedDuration" : 309198,
   "executor" : null,
-  "fullDisplayName" : "sockshop » carts » master #10",
-  "id" : "10",
+  "fullDisplayName" : "sockshop » carts » master #11",
+  "id" : "11",
   "keepLog" : false,
-  "number" : 10,
-  "queueId" : 48,
+  "number" : 11,
+  "queueId" : 58,
   "result" : "SUCCESS",
-  "timestamp" : 1553772948911,
-  "url" : "http://35.232.218.69:24711/job/sockshop/job/carts/job/master/10/",
+  "timestamp" : 1553787017163,
+  "url" : "http://35.232.218.69:24711/job/sockshop/job/carts/job/master/11/",
   "changeSets" : [
-    {
-      "_class" : "hudson.plugins.git.GitChangeSetList",
-      "items" : [
-        {
-          "_class" : "hudson.plugins.git.GitChangeSet",
-          "affectedPaths" : [
-            "monspec/carts_perfsig.json"
-          ],
-          "commitId" : "80f91a4f8f0e065f0806a5f09dd226d08ee8e404",
-          "timestamp" : 1553771235000,
-          "author" : {
-            "absoluteUrl" : "http://35.232.218.69:24711/user/noreply",
-            "fullName" : "noreply"
-          },
-          "authorEmail" : "noreply@github.com",
-          "comment" : "Change limitrs\n",
-          "date" : "2019-03-28 11:07:15 +0000",
-          "id" : "80f91a4f8f0e065f0806a5f09dd226d08ee8e404",
-          "msg" : "Change limitrs",
-          "paths" : [
-            {
-              "editType" : "edit",
-              "file" : "monspec/carts_perfsig.json"
-            }
-          ]
-        },
-        {
-          "_class" : "hudson.plugins.git.GitChangeSet",
-          "affectedPaths" : [
-            "monspec/carts_perfsig.json"
-          ],
-          "commitId" : "2de835e148bc59a668bda0adcd0698806d305ffc",
-          "timestamp" : 1553772184000,
-          "author" : {
-            "absoluteUrl" : "http://35.232.218.69:24711/user/noreply",
-            "fullName" : "noreply"
-          },
-          "authorEmail" : "noreply@github.com",
-          "comment" : "change lower limit\n",
-          "date" : "2019-03-28 11:23:04 +0000",
-          "id" : "2de835e148bc59a668bda0adcd0698806d305ffc",
-          "msg" : "change lower limit",
-          "paths" : [
-            {
-              "editType" : "edit",
-              "file" : "monspec/carts_perfsig.json"
-            }
-          ]
-        },
-        {
-          "_class" : "hudson.plugins.git.GitChangeSet",
-          "affectedPaths" : [
-            "src/main/resources/application.properties"
-          ],
-          "commitId" : "ecfefcfce25d58ce914c622521888e330ef0b7e2",
-          "timestamp" : 1553772927000,
-          "author" : {
-            "absoluteUrl" : "http://35.232.218.69:24711/user/noreply",
-            "fullName" : "noreply"
-          },
-          "authorEmail" : "noreply@github.com",
-          "comment" : "add delay\n",
-          "date" : "2019-03-28 11:35:27 +0000",
-          "id" : "ecfefcfce25d58ce914c622521888e330ef0b7e2",
-          "msg" : "add delay",
-          "paths" : [
-            {
-              "editType" : "edit",
-              "file" : "src/main/resources/application.properties"
-            }
-          ]
-        }
-      ],
-      "kind" : "git"
-    }
+    
   ],
   "culprits" : [
-    {
-      "absoluteUrl" : "http://35.232.218.69:24711/user/noreply",
-      "fullName" : "noreply"
-    }
+    
   ],
   "nextBuild" : null,
   "previousBuild" : {
-    "number" : 9,
-    "url" : "http://35.232.218.69:24711/job/sockshop/job/carts/job/master/9/"
+    "number" : 10,
+    "url" : "http://35.232.218.69:24711/job/sockshop/job/carts/job/master/10/"
   }
 }
